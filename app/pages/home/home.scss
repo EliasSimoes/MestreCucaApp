@@ -1,19 +1,23 @@
 .home {
-
+    background: rgba(254, 226, 179, 1.0);
+    background-image: url('./../../../img/bg-login.jpg');
+    background-position: center center;
+    background-repeat: repeat-x repeat-y;
     h1{
-      font-size: 1 rem;
+      font-size: 1.4 rem;
+      color: #DC5172;
     }
     h2{
       font-size: 1 rem;
+      color: #DC5172;
     } 
     .col1{
         border: solid 1px #000;
     }
     .col2{
-        border: solid 1px #000;
-        width: 60%;
-        height: 300px;
-        background: darkred;
+        
+        
+        background: rgba(254, 226, 179, 0.4);
         padding: 2em;
         margin: 3em;
 
