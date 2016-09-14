@@ -1,0 +1,26 @@
+
+<ion-header text-center>
+
+  <ion-navbar>
+    <ion-title>Busque por receitas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{item}}
+      </ion-item>
+    </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-searchbar [(ngModel)]="search">
+    
+  </ion-searchbar>
+</ion-footer>

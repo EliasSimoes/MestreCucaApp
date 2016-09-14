@@ -1,0 +1,84 @@
+
+<ion-header text-center>
+
+  <ion-navbar primary>
+    <ion-title>Ingredientes</ion-title>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+ <ion-content class="ingredientes">
+   <div class="center-container">
+     
+      <div  class="row-ingred"><!--Conteiner da lista de ingredientes-->
+        <ion-list>
+          <ion-list-header>
+              Selecione seus ingredientes
+          </ion-list-header>
+          <ion-item *ngFor="let item of ingred">
+            
+            {{item}}
+            
+          </ion-item>
+        </ion-list>
+   
+  
+      </div>
+
+    <div class="row-recei"><!-- Conteiner das receitas -->
+      <ion-list>
+          <ion-list-header>
+            Encontramos as seguintes receitas:
+          </ion-list-header>
+       <ion-item>
+              <ion-thumbnail item-left>
+                <img src="./../img/batata-frita.jpg">
+              </ion-thumbnail>
+              <h2>Batata Frita</h2>
+              <p>Nível • Fácil</p>
+              <button clear item-right>Ver</button>
+        </ion-item>
+
+        <ion-item>
+          <!--Segunda receita-->
+          <ion-thumbnail item-left>
+               <img src="./../img/macarrao.jpg">
+              </ion-thumbnail>
+              <h2>Macarrão aromático</h2>
+              <p>Nível • Médio</p>
+              <button clear item-right>Ver</button>
+          
+        </ion-item>
+          <!--Terceira receita-->
+        <ion-item>
+              <ion-thumbnail item-left>
+                <img src="./../img/batata-frita.jpg">
+              </ion-thumbnail>
+              <h2>Batata Frita</h2>
+              <p>Nível • Fácil</p>
+              <button clear item-right>Ver</button>
+        </ion-item>
+
+        <ion-item>
+          <!--Quarta receita-->
+          <ion-thumbnail item-left>
+               <img src="./../img/macarrao.jpg">
+          </ion-thumbnail>
+              <h2>Macarrão aromático</h2>
+              <p>Nível • Médio</p>
+              <button clear item-right>Ver</button>
+          
+        </ion-item>
+
+      </ion-list>
+    
+       
+    </div>
+
+ </div>
+</ion-content>

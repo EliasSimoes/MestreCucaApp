@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mestre Cuca!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="input-test">
+<ion-list>
+  <ion-item>
+    <ion-label floating>Login</ion-label>
+    <ion-input name="login" [(ngModel)]="login"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input name="senha" type="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+</ion-list>
+
+<button block (click)="entrar()">Entrar</button>
+</ion-content>

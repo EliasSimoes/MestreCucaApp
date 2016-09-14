@@ -1,0 +1,24 @@
+.home {
+
+    h1{
+      font-size: 1 rem;
+    }
+    h2{
+      font-size: 1 rem;
+    } 
+    .col1{
+        border: solid 1px #000;
+    }
+    .col2{
+        border: solid 1px #000;
+        width: 60%;
+        height: 300px;
+        background: darkred;
+        padding: 2em;
+        margin: 3em;
+
+        button{
+            width:90%;
+        }
+    }
+}

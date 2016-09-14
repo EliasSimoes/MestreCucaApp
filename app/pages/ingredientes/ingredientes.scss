@@ -1,0 +1,31 @@
+.ingredientes {
+    background: rgba(254, 226, 179, 1.0);
+    //background-image: url('./../../../img/bg-wood.jpg');
+    //background-position: center center;
+    
+    .center-container{
+        height:100%;
+        width:100%;
+        margin:0;
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        flex-direction: block;
+        .row-ingred {
+            margin-top: 0.5rem;
+            height:45%;
+            width: 100%;
+            overflow: auto;
+
+        }
+        .row-recei {
+            margin-top: 0.5rem;
+            height:45%;
+            width: 100%;
+            overflow: auto;
+
+        }
+    }
+
+}
+     
+
