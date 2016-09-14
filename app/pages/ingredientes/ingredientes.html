@@ -12,29 +12,25 @@
 
 
 
- <ion-content class="ingredientes">
+ <ion-content class="ingredientes" text-center>
    <div class="center-container">
+     <p text-left>Seleceione seus ingredientes
+       <ion-icon name="checkmark-circle-outline" favorite class="icon"></ion-icon>
+     </p>
      
-      <div  class="row-ingred"><!--Conteiner da lista de ingredientes-->
+      <div  class="row-ingred"><!--Conteiner da lista de ingredientes--> 
         <ion-list>
-          <ion-list-header>
-              Selecione seus ingredientes
-          </ion-list-header>
           <ion-item *ngFor="let item of ingred">
             
             {{item}}
             
           </ion-item>
         </ion-list>
-   
-  
       </div>
-
+    <p>Encontramos as seguintes receitas:</p>
     <div class="row-recei"><!-- Conteiner das receitas -->
       <ion-list>
-          <ion-list-header>
-            Encontramos as seguintes receitas:
-          </ion-list-header>
+     
        <ion-item>
               <ion-thumbnail item-left>
                 <img src="./../img/batata-frita.jpg">
@@ -75,6 +71,52 @@
           
         </ion-item>
 
+      
+        <ion-item>
+              <ion-thumbnail item-left>
+                <img src="./../img/batata-frita.jpg">
+              </ion-thumbnail>
+              <h2>Batata Frita</h2>
+              <p>Nível • Fácil</p>
+              <button clear item-right>Ver</button>
+        </ion-item>
+
+        <ion-item>
+          <!--Quinta receita-->
+          <ion-thumbnail item-left>
+               <img src="./../img/macarrao.jpg">
+              </ion-thumbnail>
+              <h2>Macarrão aromático</h2>
+              <p>Nível • Médio</p>
+              <button clear item-right>Ver</button>
+          
+        </ion-item>
+          <!--Sexta receita-->
+        <ion-item>
+              <ion-thumbnail item-left>
+                <img src="./../img/batata-frita.jpg">
+              </ion-thumbnail>
+              <h2>Batata Frita</h2>
+              <p>Nível • Fácil</p>
+              <button clear item-right>Ver</button>
+        </ion-item>
+
+        <ion-item>
+          <!--Sétima receita-->
+          <ion-thumbnail item-left>
+               <img src="./../img/macarrao.jpg">
+          </ion-thumbnail>
+              <h2>Macarrão aromático</h2>
+              <p>Nível • Médio</p>
+              <button clear item-right>Ver</button>
+          
+        </ion-item>
+      
+      
+      
+      
+      
+      
       </ion-list>
     
        

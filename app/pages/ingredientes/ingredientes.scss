@@ -1,6 +1,6 @@
 .ingredientes {
     background: rgba(254, 226, 179, 1.0);
-    //background-image: url('./../../../img/bg-wood.jpg');
+    background-image: url('./../../../img/bg-wood.png');
     //background-position: center center;
     
     .center-container{
@@ -10,16 +10,26 @@
         -moz-box-orient: vertical;
         -webkit-box-orient: vertical;
         flex-direction: block;
+
+        p{
+            font-size: 1.1em;
+            padding-left: 1em;
+
+        }
+        .icon{
+            padding-left: 4em;
+        }
+
         .row-ingred {
             margin-top: 0.5rem;
-            height:45%;
+            height:40%;
             width: 100%;
             overflow: auto;
 
         }
         .row-recei {
             margin-top: 0.5rem;
-            height:45%;
+            height:60%;
             width: 100%;
             overflow: auto;
 
