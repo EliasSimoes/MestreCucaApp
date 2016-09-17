@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
-
+import { Camera } from 'ionic-native';
 
 
 @Component({
@@ -10,6 +10,7 @@ export class TestesPage {
 
   bar: string = 'none';
   preco: number = 0.0;
+  image: any;
   
   constructor(private navCtrl: NavController, 
               private alertController: AlertController) {}
@@ -50,6 +51,24 @@ export class TestesPage {
     });
 
     alert.present();
+  }
+
+  takePic(){
+    Camera.getPicture({
+      quality: 100,
+      cameraDirection: Camera.Direction.BACK,
+      destinationType: Camera.DestinationType.DATA_URL 
+    }).then((ImageData) => {
+
+      let base64Image = "data:image/jpeg;base64" + ImageData;
+      this.image = base64Image; 
+    }, (err) => {
+      console.log(err);
+    }
+
+    )
+
+
   }
 
 }
