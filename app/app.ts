@@ -1,3 +1,4 @@
+import { IngredientesService } from './pages/ingredientes/ingredientes.service';
 import {Component} from '@angular/core';
 import {Platform, ionicBootstrap, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
@@ -18,6 +19,7 @@ import { Http } from '@angular/http';
 
 @Component({
   templateUrl: 'build/app.html',
+  providers: [IngredientesService]
 })
 
 export class MyApp {

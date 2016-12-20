@@ -11,7 +11,6 @@ import 'rxjs/Rx';
 
 @Component({
   templateUrl: 'build/pages/ingredientes/ingredientes.html',
-  providers:[IngredientesService]
 
 })
 export class IngredientesPage implements OnInit {
