@@ -9,6 +9,7 @@ import {ConquistasPage} from './pages/conquistas/conquistas';
 import {IndiquePage} from './pages/indique/indique';
 import {TestesPage} from './pages/testes/testes';
 import {LoginPage} from './pages/login/login';
+import { Http } from '@angular/http';
 
 
 
@@ -16,11 +17,11 @@ import {LoginPage} from './pages/login/login';
 
 
 @Component({
-  templateUrl: 'build/app.html'
+  templateUrl: 'build/app.html',
 })
 
 export class MyApp {
-  
+
   // login: any = LoginPage;
   // testes: any = TestesPage;
   // indique: any = IndiquePage;
@@ -29,13 +30,14 @@ export class MyApp {
   // historico: any = HistoricoPage;
   ingredientes: any = IngredientesPage;
   home: any = HomePage;
-  
+
   pages: Array<any>;
-  
+
   rootPage: any = this.home;
 
   constructor(public platform: Platform
-              , public menuCtrl: MenuController) {
+              , public menuCtrl: MenuController
+               ) {
 
     this.pages = [
       { title:'Testes', component: TestesPage },
@@ -43,11 +45,11 @@ export class MyApp {
       { title:'Buscar receitas', component: BuscarPage },
       { title:'Histórico de receitas', component: HistoricoPage },
       { title:'Conquistas', component: ConquistasPage },
-      { title:'Indique à um amigo', component: IndiquePage },                  
+      { title:'Indique à um amigo', component: IndiquePage },
     ];
 
     platform.ready().then(() => {
-      
+
       console.log('App rodando ok!!!');
       StatusBar.styleDefault();
     });

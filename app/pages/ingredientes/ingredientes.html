@@ -17,20 +17,20 @@
      <p text-left>Seleceione seus ingredientes
        <ion-icon name="checkmark-circle-outline" favorite class="icon"></ion-icon>
      </p>
-     
-      <div  class="row-ingred"><!--Conteiner da lista de ingredientes--> 
+
+      <div  class="row-ingred"><!--Conteiner da lista de ingredientes-->
         <ion-list>
           <ion-item *ngFor="let item of ingred">
-            
-            {{item}}
-            
+
+            {{item.nome}}
+
           </ion-item>
         </ion-list>
       </div>
     <p>Encontramos as seguintes receitas:</p>
     <div class="row-recei"><!-- Conteiner das receitas -->
       <ion-list>
-     
+
        <ion-item>
               <ion-thumbnail item-left>
                 <img src="./../img/batata-frita.jpg">
@@ -48,7 +48,7 @@
               <h2>Macarrão aromático</h2>
               <p>Nível • Médio</p>
               <button clear item-right>Ver</button>
-          
+
         </ion-item>
           <!--Terceira receita-->
         <ion-item>
@@ -68,10 +68,10 @@
               <h2>Macarrão aromático</h2>
               <p>Nível • Médio</p>
               <button clear item-right>Ver</button>
-          
+
         </ion-item>
 
-      
+
         <ion-item>
               <ion-thumbnail item-left>
                 <img src="./../img/batata-frita.jpg">
@@ -89,7 +89,7 @@
               <h2>Macarrão aromático</h2>
               <p>Nível • Médio</p>
               <button clear item-right>Ver</button>
-          
+
         </ion-item>
           <!--Sexta receita-->
         <ion-item>
@@ -109,17 +109,17 @@
               <h2>Macarrão aromático</h2>
               <p>Nível • Médio</p>
               <button clear item-right>Ver</button>
-          
+
         </ion-item>
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
       </ion-list>
-    
-       
+
+
     </div>
 
  </div>

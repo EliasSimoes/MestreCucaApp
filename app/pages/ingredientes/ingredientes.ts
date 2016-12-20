@@ -1,32 +1,35 @@
-import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { IngredientesModel } from './ingredientes.model';
 
+import { Component, OnInit, Injectable } from '@angular/core';
+import { NavController, ToastController } from 'ionic-angular';
+import { Observable } from 'rxjs/Rx';
+import { IngredientesService } from './ingredientes.service';
+
+import 'rxjs/Rx';
+
+@Injectable()
 
 @Component({
   templateUrl: 'build/pages/ingredientes/ingredientes.html',
+  providers:[IngredientesService]
+
 })
-export class IngredientesPage {
+export class IngredientesPage implements OnInit {
+ingred: IngredientesModel [];
 
-  constructor(public navCtrl: NavController,
-              public toastCtrl: ToastController) {}
 
-  
+constructor(  public navCtrl: NavController,
+              public toastCtrl: ToastController,
+              private ingredienteService: IngredientesService) {
+                
+              }
 
-    public ingred: Array<any>  =
-    [
-    'Tomate',
-    'Cenoura',
-    'Beterraba',
-    'Batata',
-    'Alface',
-    'Rucula',
-    'Agrião',
-    'Espinafre',
-    'Abobrinha',
-    'Abobora',
-    'Mandioca',
-    'Pimentão',
-    'Cebola',
-    ];
+ngOnInit(){
+  this.ingredienteService.getIngredientes().subscribe(
+    data => this.ingred = data,
+    error => console.log(error)
+  )
+}
+
 
 }
